@@ -1,3 +1,7 @@
+local map = vim.keymap.set
+
+map('n', '<leader>fw', '<cmd>Telescope live_grep<cr>', { desc = '[F]ind [W]ord' })
+
 local opts = { noremap = true, silent = true }
 
 local keymap = vim.api.nvim_set_keymap
