@@ -28,6 +28,7 @@ autocmd('BufReadPost', {
 
 vim.cmd [[
   augroup _file_type_setting
+    autocmd FileType * set formatoptions-=ro
     autocmd FileType go,make setlocal sw=4 tabstop=4 noexpandtab
     autocmd FileType lua setlocal sw=2 tabstop=2 expandtab softtabstop=2
     autocmd FileType c,cpp setlocal sw=4 tabstop=4 expandtab softtabstop=4
