@@ -3,7 +3,8 @@ o.cursorlineopt = 'line' -- to enable cursorline!
 o.mouse = ''
 
 local options = {
-  scrolloff = 5, -- is one of my fav, keep in center
+  -- Minimal number of screen lines to keep above and below the cursor.
+  scrolloff = 99, -- is one of my fav, keep in center
   wrap = true, -- not display lines as one long line
   listchars = 'eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣',
   history = 10000,
