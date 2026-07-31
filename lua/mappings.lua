@@ -8,6 +8,7 @@ local keymap = vim.api.nvim_set_keymap
 
 keymap('n', '<C-p>', '<cmd>Telescope find_files<cr>', opts)
 keymap('n', '<C-e>', '<cmd>Telescope buffers cwd_only=true sort_mru=true<cr>', opts)
+keymap('n', '<leader>*', "<cmd>lua require('telescope.builtin').grep_string({search = vim.fn.expand('<cword>')})<cr>", opts)
 
 keymap('i', '<C-f>', '<Right>', opts)
 keymap('i', '<C-b>', '<Left>', opts)
